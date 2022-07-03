@@ -11,9 +11,6 @@ ULONG imageFileNameOffset = 0x5a8; //_PEPROCESS->UCHAR ImageFileName[15];
 ULONG activeProcessLinksOffset = 0x448; //_PEPROCESS->_LIST_ENTRY ActiveProcessLinks; 
 ULONG activeThreadsOffset = 0x5f0; //_PEPROCESS->ULONG ActiveThreads;   
 
-//_KPROCESS stuff for translation
-ULONG userDirectoryTableBaseOffset = 0x388; //_KPROCESS->ULONGLONG UserDirectoryTableBase; 
-
 //_KTHREAD stuff for drawing
 ULONG processOffset = 0x220; //_KTHREAD->_KPROCESS* Process;
 ULONG win32ThreadOffset = 0x1c8; //_KTHREAD->VOID* volatile Win32Thread
