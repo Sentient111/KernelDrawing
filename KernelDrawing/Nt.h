@@ -12,6 +12,9 @@ ULONG win32ThreadOffset = 0x1c8; //_KTHREAD->VOID* volatile Win32Thread
 //_ETHREAD stuff for drawing
 ULONG cidOffset = 0x478; //_ETHREAD->_CLIENT_ID Cid;  
 
+//EPROC stuff for find eproc by name
+ULONG imageFileNameOffset = 0x5a8; //_PEPROCESS->UCHAR ImageFileName[15];   
+
 typedef DWORD LFTYPE;
 
 extern "C"
